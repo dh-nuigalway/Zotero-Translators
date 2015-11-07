@@ -557,6 +557,12 @@ record.prototype.translate = function(item) {
 		this._associateNotes(item, "505", "art");
 		// citation note
 		this._associateNotes(item, "510", "ac");
+		// Store Authors' names *and dates* as Note fields:
+		if (this.getFieldSubfields("100")[0]) {
+			authorRaw = this.getFieldSubfields("100")[0];
+			authorNote = authorRaw["a"].replace(/,\s$/, '') + "; " + authorRaw["d"];
+			item.notes.push({note: authorNote});
+		}
 		// summary
 		// Store as abstract if not already available and only one such note exists
 		if (!item.abstractNote && this.getField("520").length == 1) {
