@@ -43,7 +43,8 @@
 //which is already opend with Excel. Thus, close it before or rename
 //the new csv-file.
 
-var recordDelimiter = "\n",
+//changed recordDelimiter to \r\n to assist with a problem on import to Open Refine. -bp
+var recordDelimiter = "\r\n",
 	fieldDelimiter = ",",
 	fieldWrapperCharacter = '"',
 	replaceNewlinesWith = " ", // Set to `false` for no replacement
@@ -77,7 +78,8 @@ var exportNotes;
 function doExport() {
 	exportNotes = Zotero.getOption("exportNotes");
 	// Until we fix UTF-8xBOM export, we'll write the BOM manually
-	Zotero.write("\uFEFF");
+	//Commented out because BOM was messing up import into Open Refine. -bp
+	//Zotero.write("\uFEFF");
 	writeColumnHeaders();
 	var item, line;
 	while (item = Zotero.nextItem()) {
