@@ -2,7 +2,7 @@
 	"translatorID": "bdf0aa2b-2209-44a2-ac1f-e079221a08b1",
 	"label": "Short Title Catalogue, Netherlands (PICA-STCN)",
 	"creator": "Sean Takats, Michael Berkowitz, Sylvain Machefert, Sebastian Karcher (with adaptations for STCN by Ben Pauley)",
-	"target": "^https?://picarta\\.pica\\.nl",
+	"target": "^https?://picarta\\.nl",
 	"minVersion": "3.0",
 	"maxVersion": "",
 	"priority": 100,
@@ -1334,7 +1334,7 @@ var testCases = [
 						"creatorType": "author"
 					},
 					{
-						"firstName": "Pilar López de",
+						"firstName": "Pilar López de",
 						"lastName": "Ayala",
 						"creatorType": "author"
 					}
@@ -1357,7 +1357,7 @@ var testCases = [
 					}
 				],
 				"tags": [
-					"(GTR) Argentinië"
+					"(GTR) Argentinië"
 				],
 				"notes": [
 					{
@@ -1434,7 +1434,7 @@ var testCases = [
 		"items": [
 			{
 				"itemType": "book",
-				"title": "Phönix auf Asche: von Wäldern und Wandel in der Dübener Heide und Bitterfeld",
+				"title": "Phönix auf Asche: von Wäldern und Wandel in der Dübener Heide und Bitterfeld",
 				"creators": [
 					{
 						"firstName": "Caroline",
@@ -1904,7 +1904,7 @@ var testCases = [
 		"items": [
 			{
 				"itemType": "book",
-				"title": "Conférences sur l'administration et le droit administratif faites à l'Ecole impériale des ponts et chaussées",
+				"title": "Conférences sur l'administration et le droit administratif faites à l'Ecole impériale des ponts et chaussées",
 				"creators": [
 					{
 						"firstName": "Léon",
@@ -1957,7 +1957,7 @@ var testCases = [
 		"items": [
 			{
 				"itemType": "book",
-				"title": "Traité de la juridiction administrative et des recours contentieux",
+				"title": "Traité de la juridiction administrative et des recours contentieux",
 				"creators": [
 					{
 						"firstName": "Édouard",
