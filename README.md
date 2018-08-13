@@ -1,4 +1,7 @@
 ## Zotero translators 
+
+Version forked from [https://github.com/benjaminpauley/Zotero-Translators](https://github.com/benjaminpauley/Zotero-Translators). Updated to tweak location of data stored from STCN records; details below.
+
 ### English Short Title Catalogue
 Out of the box, <a href="http://zotero.org">Zotero</a> will ingest records from the English Short Title Catalogue quite happily, using the translator for Aleph library catalogues in conjunction with the MARC translator. The default behavior isn't especially well-suited for working with ESTC records, however. These translators make a few tweaks to improve things.
 
@@ -10,7 +13,8 @@ There are *two* javascript files here, which both need to be added to Zotero's c
 
 ### Short-Title Catalogue, Netherlands
 Like the ESTC translators, this translator makes a few tweaks to the existing PICA translator to make the results that Zotero imports more friendly for book historical work:
-* The STCN fingerprint goes in the "Extra" field.
+* **Updated** The STCN fingerprint goes in the "Edition" field  ~~~The STCN fingerprint goes in the "Extra" field~~.
+* **Updated** The Record Number goes in the "Extra" field
 * The imprint information gets split into city and publisher fields.
 * The format and collation statement gets put into the number of pages field.
 * Typographical information gets saved as a note.
